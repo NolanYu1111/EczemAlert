@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EczemAlert</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>EczemAlert</h1>
+  </header>
 
+  <nav class="app-nav">
+    <button class="nav-btn active" data-screen="home">Home</button>
+    <button class="nav-btn" data-screen="upload">Upload</button>
+    <button class="nav-btn" data-screen="log">Log</button>
+    <button class="nav-btn" data-screen="timeline">Timeline</button>
+    <button class="nav-btn" data-screen="doctor">Doctor Check</button>
+  </nav>
+
+  <main id="app">
+    <div class="screen active" id="screen-home">
+      <h2>Home</h2>
+      <p>Welcome to EczemAlert. Use the navigation above to log symptoms, upload photos, view your timeline, or prepare a doctor summary.</p>
+    </div>
+
+    <div class="screen" id="screen-upload">
+      <h2>Upload</h2>
+      <p>Upload a photo of an affected area to track changes over time.</p>
+    </div>
+
+    <div class="screen" id="screen-log">
+      <h2>Log</h2>
+      <p>Record today's symptoms, severity, and possible triggers.</p>
+    </div>
+
+    <div class="screen" id="screen-timeline">
+      <h2>Timeline</h2>
+      <p>View your flare-up history over time.</p>
+    </div>
+
+    <div class="screen" id="screen-doctor">
+      <h2>Doctor Check</h2>
+      <p>Generate a summary of your symptoms and triggers to share with your doctor.</p>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
